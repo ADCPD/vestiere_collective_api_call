@@ -16,9 +16,6 @@
 ###< symfony/phpunit-bridge ###
 
 ###< docker ###
-.docker
-.docker/*
-.docker/data
-.docker/data/
-.docker/data/*
+.docker/
+/.docker/
 ###< docker ###
