@@ -21,7 +21,7 @@ Si probleme de connexion  avec la base de données dans .ENV:
 ------------
 
 Remplacer : 
-`` DATABASE_URL=mysql://sf4:sf4@127.0.0.1:3306/db_sf4 ``
+`` DATABASE_URL=mysql://sf4:sf4@127.0.0.1:3306/db_my_project ``
 par 
 `` DATABASE_URL=mysql://sf4:sf4@mysql:3306/db_sf4 `` 
 
