@@ -1,5 +1,7 @@
-# symfony-stripe-integration
-How to accept payments with Stripe in Symfony project
+# SYMFONY STRIPE INTEGRATION
+
+This repository is a small tutorial which explains how to integrate stripe using Symfony 5 project
+and how to accept payments with Stripe
 
 ##### RUN PROJECT DOCKER
 
