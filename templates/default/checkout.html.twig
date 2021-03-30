@@ -6,19 +6,21 @@
 
 <div class="container">
     <div class="row">
+
+        {% for item in items %}
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="https://www.etam.com/dw/image/v2/AAWW_PRD/on/demandware.static/-/Sites-ELIN-master/default/dwb7c6aea7/652165705_x.jpg?sw=600&sh=710" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">HARLEME Robe sportswear</h5>
-                <h6>39,99 €</h6>
-                <h6>{{ "Couleur NOIR"|upper }}</h6>
+                <h5 class="card-title">Produit {{ item.name }}</h5>
+                <h6>{{ item.priceAmount|format_currency('EUR', {rounding_mode: 'floor'}) }} €</h6>
+
                 <p class="card-text">
-                    On rallonge le sweat pour en faire une robe: ultra confortable et easy !
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
                 </p>
-                
                 <a id="checkout-button" class="btn btn-primary">Acheter</a>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

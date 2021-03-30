@@ -35,7 +35,7 @@ class StripeController extends AbstractController
 
         $paymentMethodTypes = ['card'];
         $currency = 'eur';
-        $productData =[
+        $productData = [
             'name' => 'HARLEME Robe sportswear',
         ];
         $unitAmount = 2000;
@@ -76,6 +76,9 @@ class StripeController extends AbstractController
         return $this->render('default/warning/errors.html.twig', []);
     }
 
+    /**
+     * @return String
+     */
     private function getStripeApiKey(): String
     {
         return $this->getParameter('stripe_secret_key');
